@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<title></title>
+		<style type="text/css">
+			.scroll_wrapper{
+				width: 100%;
+				white-space: nowrap;   /*空白时候不折行,把所有内容都保持在一行*/
+				overflow-x: auto;
+				overflow-y: hidden;
+				height: 50px;
+				/*word-spacing: -5px;*/     /*通过单词间距(word-spacing)和letter-spacing去除行内元素间距；同理还可以使用margin负值*/
+				font-size: 0;           /* font-size: 0清除间距*/
+			}
+			.item{
+				display: inline-block;        /*把子元素设置成行内元素   inline-flex,inline-block,inline-table都可以*/
+				height: 50px;
+				width: 100px;
+				text-align: center;
+				line-height: 50px;
+				background-color: #4FEC50;
+				font-size: 15px;
+				/*word-spacing: 0;*/
+			}
+			.item:first-child{
+				border-bottom: 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="scroll_wrapper">
+			<div class="item">标题1</div>
+			<div class="item">标题2</div>
+			<div class="item">标题3</div>
+			<div class="item">标题5</div>
+			<div class="item">标题6</div>
+		</div>
+	</body>
+</html>
