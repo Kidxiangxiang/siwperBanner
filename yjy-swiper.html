@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="css/yjy-swiper-min.css" />
+		<script type="text/javascript">
+			! function(a) {
+				function b() {
+					var a, b = e.getBoundingClientRect().width;
+					b >= 750 && (b = 750), 320 >= b && (b = 320), a = b / 7.5, e.style.fontSize = a + "px"
+				}
+				var c, d = a.document,
+					e = d.documentElement;
+				a.addEventListener("resize", function() {
+					clearTimeout(c), c = setTimeout(b, 300)
+				}, !1), b()
+			}(window);
+		</script>
+		<style type="text/css">
+			.swiper-list img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container" id="swiper01">
+			<div class="swiper-wrapper">
+				<div class="swiper-list"><img src="image/005.jpg" /></div>
+				<div class="swiper-list"><img src="image/006.jpg" /></div>
+				<div class="swiper-list"><img src="image/007.jpg" /></div>
+				<div class="swiper-list"><img src="image/008.jpg" /></div>
+				<div class="swiper-list"><img src="image/009.jpg" /></div>
+			</div>
+			<div class="swiper-navigation">
+
+			</div>
+		</div>
+		<div class="swiper-container" id="swiper02">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-list"><img src="image/009.jpg" /></div>
+				
+				
+			</div>
+			<div class="swiper-navigation">
+
+			</div>
+		</div>
+		
+		<script src="js/yjy-swiper-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			new Swiper({
+				dom: "#swiper01",
+				navigation: true,
+				auto:true
+				
+			});
+			new Swiper({
+				dom: "#swiper02",
+				navigation: true
+				
+			});
+			
+			
+		</script>
+	</body>
+
+</html>
