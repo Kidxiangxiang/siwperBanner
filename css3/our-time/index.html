@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<script type="text/javascript">
+			! function(a) {
+				function b() {
+					var a, b = e.getBoundingClientRect().width;
+					b >= 750 && (b = 750), 320 >= b && (b = 320), a = b / 7.5, e.style.fontSize = a + "px"
+				}
+				var c, d = a.document,
+					e = d.documentElement;
+				a.addEventListener("resize", function() {
+					clearTimeout(c), c = setTimeout(b, 300)
+				}, !1), b()
+			}(window);
+		</script>
+		<title>我们的时光</title>
+		<style type="text/css">
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30rem;
+				height: 100%;
+				overflow: hidden;
+				transition: transform 0s;
+				-webkit-transition: -webkit-transform 0s;
+				transform: translate3d(0, 0, 0);
+				-webkit-transform: translate3d(0, 0, 0);
+			}
+			
+			.bg .div {
+				width: 7.5rem;
+				height: 100%;
+				overflow-y: scroll;
+				float: left;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			img {
+				display: block;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg" id="bg">
+			<div class="div01 div">
+				<img src="image/002.jpg"/>
+				<img src="image/003.jpg"/>
+				<img src="image/004.jpg"/>
+				<img src="image/005.jpg"/>
+			</div>
+			<div class="div02 div">
+				<img src="image/006.jpg"/>
+				<img src="image/007.jpg"/>
+				<img src="image/009.jpg"/>
+				<img src="image/010.jpg"/>
+				<img src="image/001.jpg"/>
+			</div>
+			<div class="div03 div">
+				<img src="image/008.jpg"/>
+				<img src="image/011.jpg"/>
+				<img src="image/015.jpg"/>
+				<img src="image/013.jpg"/>
+			</div>
+			<div class="div04 div">
+				<img src="image/014.jpg"/>
+				<img src="image/012.jpg"/>
+				<img src="image/016.jpg"/>
+				<img src="image/017.jpg"/>
+				<img src="image/018.jpg"/>
+				<img src="image/019.jpg"/>
+			</div>
+		</div>
+	</body>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+</html>
